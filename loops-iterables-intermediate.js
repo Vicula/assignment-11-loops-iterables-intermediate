@@ -135,39 +135,42 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
 
 
 
-   var fizzbuzz = function (someNumber) {
+    var fizzbuzz = function (someNumber) {
 
-      var fizBuzStrg = ''
+       var fizBuzStrg = ''
+
+       console.log("!!!!!!")
+       for(var i = 1; i <= someNumber; i+=1) {
+
+ 		// log(i)
+
+          if ((((i % 3) === 0) === true) && (((i % 5) === 0) === true)){
+
+             fizBuzStrg = fizBuzStrg + 'FizZBuzZ'
+
+          } else if ((((i % 3) === 0) === true) && (((i % 5) === 0) === false)){
+
+             fizBuzStrg = fizBuzStrg + 'fizz'
+             // log('------------------')
+             // log(i)
+
+          } else if ((((i % 3) === 0) === false) && (((i % 5) === 0) === true)){
+
+             fizBuzStrg = fizBuzStrg + 'buzz'
+
+          } else {
+             fizBuzStrg = fizBuzStrg + '.'
+
+          }
 
 
-      for(var i = 0; i < someNumber; i+=1) {
+
+       }
 
 
-         if ((((i % 3) === 0) === true) && (((i % 5) === 0) === true)){
+       return fizBuzStrg
 
-            fizBuzStrg = fizBuzStrg + 'FizZBuzZ'
-
-         } else if ((((i % 3) === 0) === true) && (((i % 5) === 0) === false)){
-
-            fizBuzStrg = fizBuzStrg + 'buzz'
-
-         } else if ((((i % 3) === 0) === false) && (((i % 5) === 0) === true)){
-
-            fizBuzStrg = fizBuzStrg + 'fiz'
-
-         } else {
-
-            fizBuzStrg = fizBuzStrg + '.'
-
-         }
-
-
-
-      }
-
-      return fizBuzStrg
-
-   }
+    }
 
 
 
@@ -189,6 +192,8 @@ console.assert(fizzbuzz(20) === "..fizz.buzzfizz..fizzbuzz.fizz..FizZBuzZ..fizz.
 function findLongestWord(sentence){
 
    var wordArray = sentence.split(' ')
+
+
 
 
 
