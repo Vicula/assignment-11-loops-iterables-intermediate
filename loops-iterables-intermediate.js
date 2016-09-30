@@ -142,7 +142,7 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
        console.log("!!!!!!")
        for(var i = 1; i <= someNumber; i+=1) {
 
- 		// log(i)
+
 
           if ((((i % 3) === 0) === true) && (((i % 5) === 0) === true)){
 
@@ -151,25 +151,15 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
           } else if ((((i % 3) === 0) === true) && (((i % 5) === 0) === false)){
 
              fizBuzStrg = fizBuzStrg + 'fizz'
-             // log('------------------')
-             // log(i)
+
 
           } else if ((((i % 3) === 0) === false) && (((i % 5) === 0) === true)){
-
              fizBuzStrg = fizBuzStrg + 'buzz'
-
           } else {
              fizBuzStrg = fizBuzStrg + '.'
-
           }
-
-
-
        }
-
-
        return fizBuzStrg
-
     }
 
 
